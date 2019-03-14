@@ -1,6 +1,6 @@
 # YoutubeWindowCurver
 Youtube window curver
 
-Please turn on developer mode and load the file to use this extension.
+Please turn on developer mode in Chrome Extension and load the folder to use this extension.
 
 Enjoy. 
