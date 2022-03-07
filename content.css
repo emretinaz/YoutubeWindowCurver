@@ -4,5 +4,18 @@
 }
 
 #thumbnail {
-    border-radius: 5px;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar{display:none !important};
+
+.style-scope ytd-watch-flexy {
+
+}
+
+ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+  width: 99% !important;
+  margin:auto !important;
+  margin-top: 10px !important;
+  border-radius: 10px !important;
 }

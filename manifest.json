@@ -1,35 +1,28 @@
 {
   "manifest_version": 2,
-
-  "name": "YoutubeWindowCurver",
+  "name": "YouTubeCurvely",
   "description": "This extension makes the video window's borders curved. I made it because I like this way. Smoooooth!!",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
-    "128": "ywcicon128.png",
-    "48": "ywcicon48.png",
-    "16": "ywcicon16.png"
+    "128": "./icons/ywcicon128.png",
+    "48": "./icons/ywcicon48.png",
+    "16": "./icons/ywcicon16.png"
   },
-
-  "page_action": {
-    "default_icon": "ywcicon16.png",
-
-    "default_title": "YoutubeCurver"
+  "action": {
+    "default_icon": "./icons/ywcicon16.png",
+    "default_title": "Youtube Thumbnail Curver"
   },
-
-  "background": {
-    "scripts": ["eventPage.js"],
-    "persistent": false
-  },
-
-  "content_scripts":[
+  "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "css": ["content.css"]
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "css": [
+        "content.css"
+      ]
     }
   ],
-
   "permissions": [
-    "tabs",
-    "https://www.youtube.com/*"
-        ]
+    "tabs"
+  ]
 }
